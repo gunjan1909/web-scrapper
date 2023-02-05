@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Scrapper Testing</title>
+</head>
+
+<body>
+
+   <h1>hello</h1>
+   <!-- urls here -->
+   <div class="flex">
+      <% for (let i=0; i < urls.length; i++) { %>
+         <img src="<%= urls[i] %>" alt="NO" />
+
+         <% } %>
+   </div>
+   <style>
+      .flex {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 1rem;
+      }
+
+      img {
+         width: auto;
+         height: 200px;
+      }
+   </style>
+</body>
+
+</html>
